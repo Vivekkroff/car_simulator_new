@@ -28,7 +28,7 @@ def display_line(image, line):
             for line in lines:
                   x1, y1, x2, y2 = line[0]
                   cv2.line(line_image,(x1,y1),(x2,y2),(10,100,255),12)
-                  cv2.line(line_image,(x_1,y),(x_2,y),(0,255,0),3)
+                  cv2.line(line_image, (x1, y), (x2, y), (0, 255, 0), 3)
                   cv2.line(line_image,(int(l_x+line_center),y+25),(int(l_x+line_center),y-25),(100,25,50),5)
                   cv2.circle(line_image, (477,360),5,[150,10,25],10)
       return line_image
